@@ -1,0 +1,10 @@
+print('\n*** Integer Input ***')
+z=input('Please enter an integer: ')
+
+while True:
+    if z.isdigit()==True:
+        print('Integer entered is ',z)
+        print('*** End ***')
+        break
+    else:
+        z=input('Error! Please enter an integer:')

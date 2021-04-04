@@ -1,0 +1,32 @@
+import functools
+#
+#def max(x,y):
+#    if x>y:
+#        return x
+#    else:
+#        return y
+#
+#a = [10,30,20]
+#m = functools.reduce(max,a)
+#
+#print(m)
+
+#def g(x,y):
+#    return x*y
+#
+#n=5
+#f=functools.reduce(g,range(1,n+1))
+#
+#print (f)
+
+def sum(x,y):
+    return x+y
+
+def check(x):
+    if x>0:
+        return x 
+    
+a=[1,-2,5,6,8]
+c=filter(check,a)
+t=functools.reduce(sum,c)
+print(t)

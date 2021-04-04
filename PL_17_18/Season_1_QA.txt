@@ -1,0 +1,18 @@
+from sys import stdin, stdout
+
+cases = int(stdin.readline())
+case = 1
+for i in range(cases):
+    a, b, c = stdin.readline().strip().split()
+    a = int(a)
+    b = int(b)
+    c = int(c)
+    if a <= 0 or b <= 0 or c <= 0 or a + b <= c or a + c <= b or b + c <= a:
+        stdout.write("Case %d: Invalid\n" % case)
+    elif a == b == c:
+        stdout.write("Case %d: Equilateral\n" % case)
+    elif a == b or b == c or c == a:
+        stdout.write("Case %d: Isosceles\n" % case)
+    else:
+        stdout.write("Case %d: Scalene\n" % case)
+    case += 1

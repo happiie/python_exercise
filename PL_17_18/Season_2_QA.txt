@@ -1,0 +1,17 @@
+from sys import stdin
+
+lines = stdin.readlines()
+lines = [k[:-1] for k in lines]
+max_len = max([len(k) for k in lines])
+
+txt = []
+for i in range(max_len):
+	t = []
+	for k in lines:
+		try:
+			t.insert(0, k[i])
+		except:
+			t.insert(0, ' ')
+	txt.append(''.join(t))
+
+print('\n'.join(txt))

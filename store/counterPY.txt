@@ -1,0 +1,16 @@
+'''
+Code below for counter element in tuple(array of something)
+'''
+
+m=(1,2,9,6,8,3,6,8,9,9)
+ctr2=0
+ctr1=0
+
+for i in range(10):
+    if m[i]==9:
+        ctr1 += 1
+    elif m[i]== 8:
+        ctr2 += 1
+        
+print('no 9 = ',ctr1)
+print('no 8 = ',ctr2)
